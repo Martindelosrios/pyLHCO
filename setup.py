@@ -15,7 +15,7 @@ setup(
     author_email=" martindelosrios13@gmail.com ",
     url=" https://github.com/martindelosrios/CADDENA",
     py_modules=["ez_setup"],
-    #packages=["pyLHCO"],
+    packages=["dataset"],
     #    exclude_package_data={"": ["tests"]},
     include_package_data=True,  # < - - - - - -- solo si hay datos
     license="The MIT License",
