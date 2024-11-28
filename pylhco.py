@@ -2,6 +2,25 @@ import numpy as np
 import pandas as pd
 
 def read_lhco(name, nmax = None, OutputType = 'array'):
+    '''
+    Function for reading .LHCO files.
+
+    Parameters
+    ----------
+
+    name: (str) LHCO file name.
+
+    nmax: (int) Maximum number of events that will be read.
+
+    OutputType: Output type. can be a 'array' (default), 'dict'
+        or 'df' (pandas data frame)
+
+    Returns
+    -------
+
+    Events contained in the LHCO file
+    '''
+
     with open(name) as fp:
         Lines     = fp.readlines()
         #print(len(Lines))
