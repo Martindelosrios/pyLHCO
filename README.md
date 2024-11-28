@@ -10,9 +10,9 @@ Then, in the pyLHCO directory just do
 
 `pip install .`
 
-or do 
+or just 
 
-`git+https://github.com/Martindelosrios/pyLHCO.git`
+`pip install git+https://github.com/Martindelosrios/pyLHCO.git`
 
 
 Soon you will be able to do
