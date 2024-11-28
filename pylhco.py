@@ -18,7 +18,32 @@ def read_lhco(name, nmax = None, OutputType = 'array'):
     Returns
     -------
 
-    Events contained in the LHCO file
+    Events contained in the LHCO file.
+    Each event may contain several particles of different type.
+        Photons typ = 0
+        Electrons typ = 1
+        Muons typ = 2
+        Taus typ = 3
+        Jets typ = 4
+        Met typ = 6
+
+        ------------------------------
+        Notice that typ = 5 is missing
+        ------------------------------
+
+    Then each particle has the following properties:
+        evNum: Event to which it belong.
+        #: Number of particle inside this event.
+        typ: Type of particle.
+        eta: Angular variable.
+        phi: Angular variable.
+        pt: Transverse Momenta [GeV].
+        jmas: IDK
+        ntrk: IDK
+        btag: IDK
+        had/em: IDK
+        dum1: IDK
+        dum2: IDK
     '''
 
     with open(name) as fp:
