@@ -11,7 +11,20 @@ Then, in the pyLHCO directory just do
 `pip install .`
 
 or just 
+```python
+from pyLHCO.pylhco import read_lhco
 
+# Read file_name as a pandas data frame
+df = read_lhco(file_name, outputType = 'df')
+
+or as a numpy array
+
+arr = read_lhco(file_name, outputType = 'array')
+
+or as a dictionary
+
+dict = read_lhco(file_name, outputType = 'dict')
+```
 `pip install git+https://github.com/Martindelosrios/pyLHCO.git`
 
 
