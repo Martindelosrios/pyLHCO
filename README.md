@@ -11,6 +11,16 @@ Then, in the pyLHCO directory just do
 `pip install .`
 
 or just 
+
+Soon you will be able to do
+
+`pip install pyLHCO`
+
+## Tutorial
+In [Examples](https://github.com/Martindelosrios/pyLHCO/tree/master/EXAMPLES) you can find some examples to start playing with pyLHCO, but is very simple!
+
+Just 
+
 ```python
 from pyLHCO.pylhco import read_lhco
 
@@ -26,18 +36,6 @@ or as a dictionary
 dict = read_lhco(file_name, outputType = 'dict')
 ```
 `pip install git+https://github.com/Martindelosrios/pyLHCO.git`
-
-
-Soon you will be able to do
-
-`pip install pyLHCO`
-
-
-## Tutorial
-In [Examples](https://github.com/Martindelosrios/pyLHCO/tree/master/EXAMPLES) you can find some examples to start playing with pyLHCO, but is very simple!
-
-Just 
-
 
 
 ## Developed by:
